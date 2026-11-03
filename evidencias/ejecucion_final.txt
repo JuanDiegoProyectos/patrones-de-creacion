@@ -1,0 +1,8 @@
+Compilación correcta: build/classes
+Procesando informe de ENTRADA de tipo FACTURA
+Procesando informe de ENTRADA de tipo COMPRA
+Procesando informe de SALIDA de tipo FACTURA
+Procesando informe de SALIDA de tipo COMPRA
+Procesando informe de MIXTA de tipo FACTURA
+Procesando informe de MIXTA de tipo COMPRA
+Procesando informe de ENTRADA de tipo PEDIDO

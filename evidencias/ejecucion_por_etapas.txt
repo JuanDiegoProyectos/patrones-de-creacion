@@ -1,0 +1,11 @@
+Compilación correcta: build/classes
+=== ETAPA 1: MODELO INICIAL ===
+Procesando informe de ENTRADA de tipo FACTURA
+Procesando informe de ENTRADA de tipo COMPRA
+Procesando informe de SALIDA de tipo FACTURA
+Procesando informe de SALIDA de tipo COMPRA
+=== ETAPA 2: NUEVA CATEGORÍA MIXTA ===
+Procesando informe de MIXTA de tipo FACTURA
+Procesando informe de MIXTA de tipo COMPRA
+=== ETAPA 3: NUEVO TIPO PEDIDO ===
+Procesando informe de ENTRADA de tipo PEDIDO

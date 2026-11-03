@@ -1,0 +1,39 @@
+Compilación correcta: build/classes
+OK    Procesamiento válido: ENT_FAC_001.txt
+OK    Procesamiento válido: ENT_COM_001.txt
+OK    Procesamiento válido: SAL_FAC_001.txt
+OK    Procesamiento válido: SAL_COM_001.txt
+OK    Procesamiento válido: MIX_FAC_001.txt
+OK    Procesamiento válido: MIX_COM_001.txt
+OK    Procesamiento válido: ENT_PED_001.txt
+OK    Orden y repetición de elementos
+OK    Identificador con guiones y subrayados
+OK    Parser: conserva el nombre completo
+OK    Parser: categoría de MIXTA
+OK    Parser: tipo PEDIDO
+OK    Rechazo de categoría desconocida
+OK    Rechazo de tipo desconocido
+OK    Rechazo de extensión distinta de .txt
+OK    Rechazo de extensión en mayúsculas
+OK    Rechazo de identificador vacío
+OK    Rechazo de ruta relativa
+OK    Rechazo de ruta absoluta
+OK    Rechazo de formato en minúsculas
+OK    Rechazo de espacios
+OK    Rechazo PEDIDO en SALIDA
+OK    Rechazo PEDIDO en MIXTA
+OK    Sin registro de fábrica MIXTA
+OK    Procesar lista vacía no genera salida
+OK    Lista nula
+OK    Nombre nulo
+OK    Registro de fábricas nulo
+OK    Canal de salida nulo
+OK    Las fábricas devuelven productos concretos correctos
+OK    Las fábricas conservan metadatos correctos
+OK    Solo ENTRADA implementa capacidad PEDIDO
+OK    El registro del procesador se copia defensivamente
+OK    La ejecución se detiene ante el primer error
+OK    main: procesa exactamente siete informes
+OK    main: opción --etapas incluye los tres estados
+OK    Se puede inyectar una fábrica alternativa
+RESULTADO: 37 aprobadas; 0 fallidas

@@ -1,0 +1,36 @@
+digraph Uml {
+ graph [rankdir=LR, bgcolor="white", pad=".20", nodesep=".34", ranksep=".58", splines=polyline, concentrate=false, fontname="Lato", label="Etapa 2 · incorporación de MIXTA", labelloc=t, fontsize=20, fontcolor="#17324F"];
+ node [shape=record, style="rounded,filled", fontname="Lato", fontsize=11, fontcolor="#18314D", color="#8DA6BA", penwidth=1.2, fillcolor="#F5F9FC", margin="0.14,0.10"];
+ edge [fontname="Lato", fontsize=9, color="#718B9F", arrowsize=.70];
+ Cliente [label="{ProcesadorInformes|+ procesarInformes(String[], PrintStream)}", fillcolor="#DFEFFB", color="#2583BD"];
+FabricaInformes [label="{«interface» FabricaInformes|+ crearFactura(nombre): Factura\l+ crearCompra(nombre): Compra\l}", fillcolor="#E2EFF9", color="#3487B2"];
+Factura [label="{«interface» Factura|+ procesar(salida)}", fillcolor="#E8F4E9", color="#5E986E"];
+Compra [label="{«interface» Compra|+ procesar(salida)}", fillcolor="#E8F4E9", color="#5E986E"];
+FabricaEntrada [label="{FabricaEntrada|+ crearFactura()\l+ crearCompra()\l}",fillcolor="#FFF6E8",color="#C29A5A"];
+EntradaFactura [label="{EntradaFactura|+ procesar(salida)}", fillcolor="#F1F7F1", color="#78A78B"];
+EntradaCompra [label="{EntradaCompra|+ procesar(salida)}", fillcolor="#F1F7F1", color="#78A78B"];
+FabricaSalida [label="{FabricaSalida|+ crearFactura()\l+ crearCompra()\l}",fillcolor="#FFF6E8",color="#C29A5A"];
+SalidaFactura [label="{SalidaFactura|+ procesar(salida)}", fillcolor="#F1F7F1", color="#78A78B"];
+SalidaCompra [label="{SalidaCompra|+ procesar(salida)}", fillcolor="#F1F7F1", color="#78A78B"];
+FabricaMixta [label="{FabricaMixta|+ crearFactura()\l+ crearCompra()\l}",fillcolor="#FFF6E8",color="#C29A5A"];
+MixtaFactura [label="{MixtaFactura|+ procesar(salida)}", fillcolor="#F1F7F1", color="#78A78B"];
+MixtaCompra [label="{MixtaCompra|+ procesar(salida)}", fillcolor="#F1F7F1", color="#78A78B"];
+ Cliente -> FabricaInformes [style=dashed, label="depende de"];
+FabricaInformes -> Factura [style=dashed, label="crea"];
+FabricaInformes -> Compra [style=dashed];
+FabricaEntrada -> FabricaInformes [arrowhead=empty, style=dashed, color="#C29A5A"];
+FabricaEntrada -> EntradaFactura [style=dashed, label="instancia"];
+EntradaFactura -> Factura [arrowhead=empty, style=dashed, color="#78A78B"];
+FabricaEntrada -> EntradaCompra [style=dashed, label="instancia"];
+EntradaCompra -> Compra [arrowhead=empty, style=dashed, color="#78A78B"];
+FabricaSalida -> FabricaInformes [arrowhead=empty, style=dashed, color="#C29A5A"];
+FabricaSalida -> SalidaFactura [style=dashed, label="instancia"];
+SalidaFactura -> Factura [arrowhead=empty, style=dashed, color="#78A78B"];
+FabricaSalida -> SalidaCompra [style=dashed, label="instancia"];
+SalidaCompra -> Compra [arrowhead=empty, style=dashed, color="#78A78B"];
+FabricaMixta -> FabricaInformes [arrowhead=empty, style=dashed, color="#C29A5A"];
+FabricaMixta -> MixtaFactura [style=dashed, label="instancia"];
+MixtaFactura -> Factura [arrowhead=empty, style=dashed, color="#78A78B"];
+FabricaMixta -> MixtaCompra [style=dashed, label="instancia"];
+MixtaCompra -> Compra [arrowhead=empty, style=dashed, color="#78A78B"];
+}
